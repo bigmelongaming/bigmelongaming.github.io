@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>Melon gaming</title>
     <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
   </head>
   <body>
       <nav id="nav">
@@ -13,7 +12,19 @@
         <li><a href="https://discord.gg/uwCVmsG">Discord</a></li>
       </ul>
     </nav>
-  <br><br><h1>Melon Gaming Website</h1>
-  <p>This is still a work in progress, check back later for more.</p>
-  </body>
+    <div id="webheadercontent">
+      <br>
+      <br>
+      <h1>Join us now in Minecraft at</h1>
+      <input id="ipInp" type="text" value="mc.melongaming.co" readonly>
+      <button id="ipBtn" onclick="cpy()">Copy</button>
+    </div>
+    <script type="text/javascript">
+      const ipInp = document.getElementById("ipInp");
+      ipInp.value = "mc.melongaming.co"
+      function cpy() {
+        ipInp.select();
+        document.execCommand("Copy");
+      };
+    </script>
 </html>
